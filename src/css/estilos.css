@@ -1,0 +1,87 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    background-image: url(../img/bg.jpg);
+    background-size: contain;
+}
+
+.container .mensagem {
+    max-width: 300px;
+}
+
+.container .mensagem h1 {
+    color: var(--mainText);
+    font-weight: 900;
+    font-size: 20px;
+    margin-bottom: 11px;
+}
+
+.container .mensagem p {
+    font-size: 15px;
+    color: var(--mainText);
+}
+
+.formulario {
+    width: 340px;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.formulario input {
+    height: 35px;
+}
+
+.formulario textarea {
+    height: 100px;
+}
+
+.formulario textarea, .formulario input {
+    width: 300px;
+    padding: 5px 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.formulario input:nth-child(1) {
+    margin-top: 0;
+}
+
+.formulario h2 {
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 8px;
+}
+
+.formulario p {
+    font-size: 8px;
+    color: var(--campoNegado);
+    display: none;
+}
+
+.formulario p.negado {
+    display: block;
+}
+
+input.negado, textarea.negado {
+    border: 1px solid var(--campoNegado);
+}
+
+input.aceito, textarea.aceito {
+    border: 1px solid var(--campoAceito);
+}
+
+.formulario .btn-enviar {
+    font-size: 15px;
+    font-weight: 700;
+    height: 42px;
+    background-color: #3ccc87;
+    color: var(--mainText);
+    border: none;
+    cursor: pointer;
+}
